@@ -8,3 +8,5 @@
 go run hello.go 
 go build hello.go
 ./hello
+#install to $GOPATH/bin
+go install hello.go
