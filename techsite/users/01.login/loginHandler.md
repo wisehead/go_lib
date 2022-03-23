@@ -45,4 +45,10 @@ loginHandler
 --session.Values["email"] = resp.Email
 --Session.save
 ----s.store.Save(r, w, s)
+--httpx.OkJson(w, errorx.NewResponse(0, "ok", resp))
+----httpx.WriteJson
+------w.Header().Set(ContentType, ApplicationJson)
+------w.WriteHeader(code)
+------json.Marshal(v)
+------w.Write(bs)
 ```
