@@ -38,5 +38,11 @@ loginHandler
 		LastLoginTime: user.LastLoginTime,
 		CreatedAt:     user.CreateTime.Unix(),
 	}	
-
+--r.Context().Value(common.ContextKeySession).(*sessions.Session)
+--session.Options.SameSite = http.SameSiteNoneMode
+--session.Options.Secure = true
+--session.Values["userid"] = resp.UserId
+--session.Values["email"] = resp.Email
+--Session.save
+----s.store.Save(r, w, s)
 ```
