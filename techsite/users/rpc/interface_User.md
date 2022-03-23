@@ -10,3 +10,11 @@
 		DeleteUser(ctx context.Context, in *DeleteUserReq, opts ...grpc.CallOption) (*DeleteUserResp, error)
 	}
 ```
+
+#2.GetUser
+
+```
+GetUser
+--c.cc.Invoke(ctx, "/user.User/GetUser", in, out, opts...)
+--
+```
